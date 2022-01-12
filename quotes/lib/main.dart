@@ -78,7 +78,7 @@ class _QuoteListState extends State<QuoteList> {
             fontWeight: FontWeight.bold,
           ),
         ),
-        foregroundColor: Colors.white,
+        foregroundColor: Colors.black45,
         centerTitle: true,
         backgroundColor: Colors.white10,
       ),

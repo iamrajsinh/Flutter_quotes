@@ -39,7 +39,7 @@ class QuoteCard extends StatelessWidget {
               padding: const EdgeInsets.fromLTRB(8, 8, 8, 5),
               child: FlatButton.icon(
                 shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(8)),
+                    borderRadius: BorderRadius.circular(9)),
                 onPressed: () {},
                 color: Colors.black12,
                 label: Text(
