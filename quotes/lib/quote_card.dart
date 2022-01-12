@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'quote.dart';
 
-
 class QuoteCard extends StatelessWidget {
   final Quote quote;
   QuoteCard({required this.quote});
@@ -28,11 +27,29 @@ class QuoteCard extends StatelessWidget {
             ),
             SizedBox(height: 6),
             Text(
-              '~ ${quote.author}',
+              '- ${quote.author}',
               textAlign: TextAlign.right,
               style: TextStyle(
                 fontSize: 14,
-                color: Colors.grey[800],
+                color: Colors.grey[700],
+              ),
+            ),
+            SizedBox(height: 10),
+            Padding(
+              padding: const EdgeInsets.fromLTRB(8, 8, 8, 5),
+              child: FlatButton.icon(
+                shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(8)),
+                onPressed: () {},
+                color: Colors.black12,
+                label: Text(
+                  'Delete Quote',
+                  style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Colors.black45,
+                  ),
+                ),
+                icon: Icon(Icons.delete),
               ),
             ),
           ],
